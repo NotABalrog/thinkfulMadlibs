@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Thinkful Madlibs</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+</head>
+<body ng-app>
+<header>
+    <div class="smiley">
+        <img src="images/mad-lib-happy-face.png" alt="Mad libs smiley">
+    </div>
+    <div class="logo">
+        <img src="images/ng-mad-libs-logo.png" alt="Angular Logo">
+    </div>
+</header>
+<h2>Please provide the following words:</h2>
+<form class="inputs">
+    <input name="inputTest" ng-model="data.malename" type="text" placeholder="male name">
+    <input name="inputTest" ng-model="data.jobtitle"type="text" placeholder="job title">
+    <input name="inputTest" ng-model="data.tedioustask"type="text" placeholder="tedious task">
+    <input name="inputTest" ng-model="data.dirtytask"type="text" placeholder="dirty task">
+    <input name="inputTest" ng-model="data.celebrity"type="text" placeholder="celebrity">
+    <input name="inputTest" ng-model="data.uselessskill"type="text" placeholder="useless skill">
+    <input name="inputTest" ng-model="data.obnoxiouscelebrity"type="text" placeholder="obnoxious celebrity">
+    <input name="inputTest" ng-model="data.hugenumber"type="text" placeholder="huge number">
+    <input name="inputTest" ng-model="data.adjective"type="text" placeholder="adjective">
+    <button type="submit">Submit</button>
+</form>
+<div class="story">
+<p><span>{{data.malename}}</span> was a <span>{{data.jobtitle}}</span> who loved technology. Although he loved parts of
+his job, he absolutely hated <span>{{data.tedioustask}}</span> and <span>{{data.dirtytask}}</span> So, <span>{{data.malename}}</span>
+ met with his life mentor <span>{{data.celebrity}}</span> who told him to learn how to <span>{{data.uselessskill}}</span>
+so he studied programming instead.</p>
+    <p>What a great decision! With his new skills, <span>{{data.malename}}</span> built a <span>{{data.adjective}}</span>
+        robot named <span>{{data.obnoxiouscelebrity}}</span> that not only loved <span>{{data.dirtytask}}</span>
+        but did it <span>{{data.hugenumber}}</span> faster.
+    </p>
+</div>
+
+</body>
+
+<script src="main.js"></script>
+</html>
